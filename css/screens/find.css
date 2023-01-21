@@ -1,0 +1,127 @@
+.find-icons {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.find-icons__icon {display: flex;
+flex-direction: column;
+align-items: center;}
+
+.find-icons__icon i {font-size:35px;}
+
+.find-icons__icon span {margin-top: 15px;
+width: 90px;
+text-align: center;}
+
+.recommended-friends {padding: 25px 0;
+    margin:25px 0;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);}
+
+    .recommended-friends__title {font-size: 15px;
+    color: var(--mycolor-grey);}
+
+    .recommended-friends__empty {display: flex;
+        justify-content: center;
+        color: var(--mycolor-grey);
+    margin: 100px 0;
+font-size: 18px;}
+
+.open-chat__header {display: flex;
+justify-content: space-between;
+color: var(--mycolor-grey);
+margin-bottom: 25px;
+font-size: 15px;
+}
+.open-post {display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post__title {
+    font-size: 20px;
+    font-weight: 600;
+margin-bottom: 8px;}
+
+.open-post__hashtags {
+    text-transform:uppercase;
+    color: var(--mycolor-grey);
+    margin-bottom: 8px;
+}
+
+.open-post__members img {height: 25px;
+width: 25px;
+border-radius: 50%;
+margin-right: 5px;}
+.open-post__members {
+    display: flex;
+align-items: center;}
+
+.open-post__member-count {
+    color: var(--mycolor-grey);
+    margin-right: 5px;
+}
+
+.open-post__members .divider {
+    width: 1px;
+    height: 14px;
+    background-color: var(--mycolor-grey);
+    margin-right: 5px;
+}
+
+.open-post__member-status {
+    color: #FF68C5;
+}
+
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.open-post__photo__likes {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 3px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    position: absolute;
+   right: 5px;
+    bottom: 5px;
+}
+.open-post__photo__likes i {
+    margin-left: 5px;
+}
+.open-post__photo__likes span {
+    margin-left: 5px;
+    margin-right: 3px;
+    font-size: 13px;
+}
+
+@keyframes heartBeat {
+    0%{
+color: white;
+transform: none;
+    }
+    50%{
+color: tomato;
+transform: scale(1.5);
+    }
+    100%{
+color: white;
+transform: none;
+    }
+}
+
+.open-post__photo__likes:hover i {
+    will-change: transform;
+animation: heartBeat 1s linear infinite;
+}
